@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <description>listenhome产品，你超级牛掰</description>
+    <modelVersion>4.0.0</modelVersion>
+    <name>listenhome-parent</name>
+    <packaging>pom</packaging>
+
+    <groupId>cn.listenhome</groupId>
+    <artifactId>listenhome-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.3.RELEASE</version>
+        <relativePath/>
+    </parent>
+
+    <modules>
+        <module>listenhome-web-admin</module>
+        <module>listenhome-service</module>
+        <module>listenhome-dao</module>
+        <module>listenhome-entity</module>
+        <module>listenhome-common</module>
+    </modules>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>cn.listenhome</groupId>
+                <artifactId>listenhome-web-admin</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.listenhome</groupId>
+                <artifactId>listenhome-service</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.listenhome</groupId>
+                <artifactId>listenhome-dao</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.listenhome</groupId>
+                <artifactId>listenhome-entity</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.listenhome</groupId>
+                <artifactId>listenhome-common</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
